@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="用户模块"
+      android:textColor="@android:color/holo_red_light"
+      android:layout_gravity="center_horizontal"
+      android:textSize="30sp"
+      />
+  <Button
+      android:id="@+id/btnUserToLogin"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="viewClick"
+      android:text="user 模块跳转 login 模块 LoginActivity"
+      />
+  <Button
+      android:id="@+id/btnUserToMain"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="viewClick"
+      android:text="user 模块 跳转 app模块 MainActivity"
+      />
+  <Button
+      android:id="@+id/btnGetLoginService"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="viewClick"
+      android:text="user 模块 接口获取 login 模块 服务"
+      />
+</LinearLayout>

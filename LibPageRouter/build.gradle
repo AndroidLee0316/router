@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+apply from:'uploadArchives.gradle'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName '1.0.0'
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName(), AROUTER_GENERATE_DOC: "enable"]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    annotationProcessor "com.alibaba:arouter-compiler:${rootProject.ext.arouterCompiler}"
+    api "com.alibaba:arouter-api:${rootProject.ext.arouterApi}"
+    testImplementation 'junit:junit:4.12'
+}

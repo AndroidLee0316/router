@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pasc.lib.router">
+
+    <application>
+        <activity
+            android:name="com.pasc.lib.router.interceptor.InterceptorActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/routerTransparentActivityStyle"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:finishOnTaskLaunch="false"
+            />
+    </application>
+</manifest>

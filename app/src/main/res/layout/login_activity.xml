@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    >
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Login模块"
+      android:textColor="@android:color/holo_red_light"
+      android:layout_gravity="center_horizontal"
+      android:textSize="30sp"
+      />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_login_state"
+    tools:text="kkk"
+    android:layout_gravity="center_horizontal"
+    android:textColor="@android:color/black"
+    />
+  <Button
+      android:id="@+id/btnLoginToUser"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="viewClick"
+      android:text="login模块 跳转 user模块 UserActivity"
+      />
+  <Button
+      android:id="@+id/btnLoginToMain"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="viewClick"
+      android:text="login模块 跳转 app模块 MainActivity"
+      />
+  <Button
+      android:id="@+id/btnGetUserService"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="viewClick"
+      android:text="login模块 接口获取 user模块 服务"
+      />
+  <Button
+      android:id="@+id/login"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="viewClick"
+      android:text="login"
+      />
+  <Button
+      android:id="@+id/logout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="viewClick"
+      android:text="logout"
+      />
+</LinearLayout>

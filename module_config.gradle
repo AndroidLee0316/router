@@ -1,0 +1,17 @@
+ext {
+    versionName = "1.0.0"
+    versionCode = 1
+    // Sdk and tools
+    minSdkVersion = 21
+    targetSdkVersion = 30
+    compileSdkVersion = 30
+    buildToolsVersion = '30.0.3'
+
+    //系统库
+    supportLibraryVersion = '27.1.1'
+    arouterCompiler = '1.2.0'
+    arouterApi = '1.4.0'
+    constraintLayout = '1.1.2'
+
+
+}
